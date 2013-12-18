@@ -1,3 +1,8 @@
 from django.db import models
 
-# Create your models here.
+class Guest(models.Model):
+    name = models.CharField(max_length=200)
+    adults = models.IntegerField()
+    children = models.IntegerField()
+    attending = models.BooleanField()
+    song = models.CharField(max_length=200)
