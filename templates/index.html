@@ -1,0 +1,373 @@
+{% load staticfiles %}
+
+<html lang="en">
+
+<head>
+<title>Zack and Nicole - July 12, 2014!</title>
+
+<meta name="keywords" content=""><meta name="description" content="">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link href='http://fonts.googleapis.com/css?family=Droid+Serif' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Raleway:100' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+
+
+<link href="{% static "layout/css/bootstrap.min.css" %}" rel="stylesheet">
+<link href="{% static "layout/css/bootstrap-responsive.min.css" %}" rel="stylesheet" type="text/css">
+
+
+<script src="{% static "layout/js/jquery.js" %}" type="text/javascript"></script>
+<script src="{% static "layout/js/bootstrap.min.js" %}" type="text/javascript"></script>
+<script src="{% static "layout/plugins/scrollto/jquery.scrollTo-1.4.3.1-min.js" %}" type="text/javascript"></script>
+<!-- MouseWheel -->
+<script src="{% static "layout/plugins/mousewheel/jquery.mousewheel.min.js" %}" type="text/javascript"></script>
+<!-- MouseWheel END -->
+<!-- FlexSlider -->
+<script src="{% static "layout/plugins/flexslider/jquery.flexslider-min.js" %}" type="text/javascript"></script>
+<link rel="stylesheet" href="{% static "layout/plugins/flexslider/flexslider.css" %}" />
+<!-- FlexSlider END -->
+<!-- PrettyPhoto -->
+<script src="{% static "layout/plugins/prettyphoto/jquery.prettyPhoto.js" %}" type="text/javascript"></script>
+<link rel="stylesheet" href="{% static "layout/plugins/prettyphoto/css/prettyPhoto.css" %}" />
+<!-- PrettyPhoto END -->
+<!-- Isotop -->
+<script src="{% static "layout/plugins/isotop/jquery.isotope.min.js" %}" type="text/javascript"></script>
+<link rel="stylesheet" href="{% static "layout/plugins/isotop/style.css" %}" />
+<!-- Isotop END -->
+<!-- jQuery Form Plugin start -->
+<script type="text/javascript" src="{% static "layout/plugins/ajaxform/jquery.form.js" %}"></script>
+<!-- jQuery Form Plugin end -->
+<script src="{% static "layout/js/functions.js" %}" type="text/javascript"></script>
+<script src="{% static "layout/js/script.js" %}" type="text/javascript"></script>
+
+<link href="{% static "layout/css/style.css" %}" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <!-- Header -->
+    <div class="heading page-item-class" id="page0">
+        <div class="container-fluid heading_pattern">
+            <div class="container">
+                <div class="logo"></div>
+                <div class="hello_block">
+                    <div class="decorative_line">Zack and Nicole</div>
+                </div>
+                <div class="page-header">
+                    <h1>Booze, food, and bad dance moves.</h1>
+                    <h1>July 12th, 2014 - Dallas, TX</h1>
+                </div>
+                <a href="#page1" class="header_arrow_button"></a>
+            </div>
+        </div>
+    </div>
+    <!-- Header END -->
+
+<!-- Navigation -->
+<div class="navigation_main_wrapper">
+	<div class="navigation_main">
+		<div class="container-fluid">
+
+			<a id="collapse_button" class="btn btn-navbar pull-right" data-toggle="collapse" data-target=".nav-collapse">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</a>
+
+<!-- Logo 3 on mobile fixed menu. Will be visible if window width is less than 768px. Max height 60px -->
+			<div class="mobile_menu_logo"><a href="#page0" class="scroll_to mobile_menu_logo_a">Zack and Nicole</a></div>
+
+			<div class="container navbar_container" id="collapse_element">
+<!-- Logo 2 on fixed menu. Max height 64px. Will be shown if window width > 768px -->
+				<div class="logo2 pull-left">Zack and Nicole</div>
+
+				<div class="navbar pull-right">
+					<div class="navbar-inner">
+						<ul class="nav">
+							<li class="active"><a href="#page0">Home</a></li>
+							<li><a href="#page1">Our Story</a></li>
+							<li><a href="#page2">Wedding Party</a></li>
+							<li><a href="#page3" class="hide-me-in-drop-down-for-tablets">Activities</a></li>
+							<li><a href="#page4" class="hide-me-in-drop-down-for-tablets">Hotels</a></li>
+							<li><a href="#page5" class="hide-me-in-drop-down-for-tablets">Getting Here</a></li>
+							<li><a href="#page6" class="hide-me-in-drop-down-for-tablets">RSVP</a></li>
+
+						<!-- This item will show only on tablets and containelements with class .hide-me-in-drop-down-for-tablets -->
+							<li class="dropdown tablet_drop_down">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown">More Pages <b class="caret"></b> </a>
+								<ul class="dropdown-menu"><li>&nbsp;</li></ul>
+							</li>
+						</ul>
+					</div><!-- .navbar-inner -->
+				</div>
+			</div><!-- .navbar_container -->
+		</div><!-- .container-fluid -->
+	</div>
+</div>
+<!-- Navigation END -->
+
+<!-- Page 1 (about) -->
+<div class="container-fluid page-item-class" id="page1">
+	<div class="container">
+		<div class="page-header">
+			<h1>Our vision is simple. We want to create websites and applications with both high qualtiy design and<br/>easy-to-access.</h1>
+		</div>
+		<p>We offer a wide range of services including web and app design, branding services and website development. We've worked with numerous clients to create professional websites and brands to a high standard. Check out my work above to see some of my finest. If you'd like to know more about what we do and think we could help improve your digital image don't hesitate to get in touch and find out how we can help you.</p>
+
+		<div class="row-fluid">
+			<div class="span3 tac">
+				<img src="{% static "images/about_icon_1.jpg" %}" alt="" />
+				<h5>СONCEPTUALIZATION</h5>
+				<p>Collaboration is key to success.
+You know your brand inside out. We know digital inside out. </p>
+			</div>
+			<div class="span3 tac">
+				<img src="{% static "images/about_icon_2.jpg" %}" alt="" />
+				<h5>DESIGN</h5>
+				<p>Collaboration is key to success.
+You know your brand inside out. We know digital inside out. </p>
+			</div>
+			<div class="span3 tac">
+				<img src="{% static "images/about_icon_3.jpg" %}" alt="" />
+				<h5>USER EXPERIENCE</h5>
+				<p>Collaboration is key to success.
+You know your brand inside out. We know digital inside out. </p>
+			</div>
+			<div class="span3 tac">
+				<img src="{% static "images/about_icon_4.jpg" %}" alt="" />
+				<h5>DEVELOPMENT</h5>
+				<p>Collaboration is key to success.
+You know your brand inside out. We know digital inside out. </p>
+			</div>
+			<div class="clearfix"></div>
+			<div class="styled_element"><div class="decorative_line"><a href="#" class="the_btn btn-large">GET A QUOTE</a></div></div>
+		</div>
+
+	</div>
+</div>
+<!-- Page 1 (about) END -->
+
+<!-- Page 2 (Flex slider) -->
+<div class="container-fluid page-item-class has_slider" id="page2">
+	<div class="container">
+		<div class="page-header"><h1>Wedding Party</h1></div>
+	</div>
+
+	<div class="flexslider">
+		<ul class="slides">
+            <li>
+                <!--img src="{% static "images/projects_clipart.jpg" %}" alt=""/ -->
+                <span>
+                <h1>Jackie Streetman</h1>
+                <h2>Matron of honor</h2>
+                <p>Here is some info about Jackie</p>
+                </span>
+                <div class="flex-caption">
+                    <div class="caption_inner">Jackie Streetman - Matron of Honor</div>
+                </div>
+            </li>
+            <li>
+                <img src="{% static "images/projects_clipart2.jpg" %}" alt=""/>
+                <div class="flex-caption">
+                    <div class="caption_inner">Jake Lalanne - Best Man</div>
+                </div>
+            </li>
+			<li>
+				<img src="{% static "images/projects_clipart3.jpg" %}" alt=""/>
+			</li>
+			<li>
+				<img src="{% static "images/projects_clipart4.jpg" %}"  alt=""/>
+			</li>
+			<li>
+				<img src="{% static "images/projects_clipart5.jpg" %}"  alt=""/>
+			</li>
+			<li>
+				<img src="{% static "images/projects_clipart6.jpg" %}"  alt=""/>
+			</li>
+		</ul>
+	</div>
+
+</div>
+<!-- Page 2 (Flex slider) END -->
+
+<!-- Page 3 (Activities) -->
+<div class="container-fluid page-item-class" id="page3">
+	<div class="container">
+		<div class="page-header">
+			<h1>Activities <small class="pull-right">Check out some fun things to do in Dallas!</small></h1>
+		</div>
+		<div class="row-fluid">
+			<div class="span3 tac">
+				<div class="event_block">
+					<h2>Drink Beer</h2>
+					<a class="the_btn btn-large dark" href="http://www.deepellumbrewing.com/" target="_action">Deep Ellum Brewery Tour</a>
+					<a class="the_btn btn-large dark" href="http://www.beerknurd.com/stores/addison/" target="_action">Flying Saucer Beer Emporium</a>
+				</div>
+			</div>
+			<div class="span3 tac">
+				<div class="event_block event_block2">
+					<h2>Texas Rangers</h2>
+					<a class="the_btn btn-large dark" href="http://texas.rangers.mlb.com/" target="_action">Team Website</a>
+				</div>
+			</div>
+			<div class="span3 tac">
+				<div class="event_block event_block3">
+					<h2>Perot Museum of Nature and Science</h2>
+					<a class="the_btn btn-large dark" href="http://www.perotmuseum.org/" target="_action">Museum Website</a>
+				</div>
+			</div>
+			<div class="span3 tac">
+				<div class="event_block event_block4">
+					<h2>See Animals</h2>
+					<a class="the_btn btn-large dark" href="http://www.dwazoo.com/" target="_action">Dallas World Aquarium</a>
+					<a class="the_btn btn-large dark" href="http://www.dallaszoo.com/" target="_action">Dallas Zoo</a>
+				</div>
+			</div>
+		</div>
+		<div class="row-fluid">
+			<div class="span3 tac">
+				<div class="event_block event_block4">
+					<h2>Play Golf</h2>
+					<a class="the_btn btn-large dark" href="http://www.sherrillparkgolf.com/" target="_action">Sherril Park Golf Course</a>
+					<a class="the_btn btn-large dark" href="http://www.clubcorp.com/Clubs/Canyon-Creek-Country-Club" target="_action">Canyon Creek Country Club</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- Page 3 (Events) END -->
+
+<!-- Page 1 (about) -->
+<div class="container-fluid page-item-class" id="page4">
+    <div class="container">
+        <div class="page-header">
+            <h1>Hotels</h1>
+        </div>
+        <p>
+            We've blocked rooms at a hotel near the church and ceremony.
+        </p>
+        <div class="row-fluid">
+            <div class="span3 tac">
+                <h5>Marriott Denver South at Park Meadows</h5>
+                <div>
+                    <span>10345 Park Meadows Dr</span>
+                    <span>Lone Tree, CO 80124</span>
+                    <span><a href="http://www.marriott.com/hotels/travel/denms-denver-marriott-south-at-park-meadows/" target="_blank">Website</a></span>
+                    <span><a href="https://maps.google.com/maps/ms?msid=202622740481013268172.0004d592ff2479fc2f47f&msa=0&ll=39.552137,-104.871776&spn=0.011135,0.022638" target="_blank">Map</a></span>
+                    <p>
+                        Mention the Branchflower wedding.
+                    </p>
+                </div>
+            </div>
+            <div class="span3 tac">
+                <h5>Element Denver Park Meadows</h5>
+                <div>
+                    <span>(303) 790-2100</span>
+                    <span>9985 Park Meadows Dr</span>
+                    <span>(Lone Tree, CO 80124</span>
+                    <span><a href="http://www.elementdenverparkmeadows.com/" target="_blank">Website</a></span>
+                    <span><a href="https://maps.google.com/maps/ms?msid=202622740481013268172.0004d592ff2479fc2f47f&msa=0&ll=39.552137,-104.871776&spn=0.011135,0.022638" target="_blank">Map</a></span>
+                    <p>
+                        Mention the Mearsheimer / Branchflower wedding.  Reservations must be received by July 31st.
+                    </p>
+                </div>
+            </div>
+            <div class="span3 tac">
+                <h5>Hampton Inn & Suites Denver / South-RidgeGate</h5>
+                <div>
+                    <span>(303) 790-4100</span>
+                    <span>10030 Trainstation Circle</span>
+                    <span>Lone Tree, CO 80124</span>
+                    <span><a href="http://hamptoninn3.hilton.com/en/hotels/colorado/hampton-inn-and-suites-denver-south-ridgegate-DENRGHX/index.html" target="_blank">Website</a></span>
+                    <span><a href="https://maps.google.com/maps/ms?msid=202622740481013268172.0004d592ff2479fc2f47f&msa=0&ll=39.552137,-104.871776&spn=0.011135,0.022638" target="_blank">Map</a></span>
+                </div>
+            </div>
+            <div class="span3 tac">
+                <h5>Hyatt Place Denver-South / Park Meadows</h5>
+                <div>
+                    <span>(303) 662-8500</span>
+                    <span>9030 East Westview Road</span>
+                    <span>Lone Tree, CO 80124</span>
+                    <span><a href="http://denversouth.place.hyatt.com/hyatt/hotels-denversouth-place/place/index.jsp?null" target="_blank">Website</a></span>
+                    <span><a href="https://maps.google.com/maps/ms?msid=202622740481013268172.0004d592ff2479fc2f47f&msa=0&ll=39.552137,-104.871776&spn=0.011135,0.022638" target="_blank">Map</a></span>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+
+    </div>
+</div>
+<!-- Page 1 (about) END -->
+
+<!-- Page 5 (Contacts) -->
+<div class="page-item-class" id="page5">
+    <div class="container-fluid">
+        <div class="container">
+            <div class="page-header">
+                <h1>Getting Here</h1>
+            </div>
+        </div>
+    </div>
+    <div class="google_map">
+        <div class="form_container">
+            <span>
+                <h3>Epiphany Episcopal Church</h3>
+                	<ol>
+                		<li>Exit Arapaho from US-75</li>
+                        <li>Head west on Arapaho</li>
+                		<li>Take a left on Custer</li>
+                		<li>Church is on the right side before Belt Line</li>
+                	</ol>
+                <h3>Canyon Creek Country Club</h3>
+                <h4>From the Church</h4>
+                	<ol>
+                		<li>Head North on Custer</li>
+                		<li>Take left on Lookout Dr.</li>
+                		<li>Country club will be on the left</li>
+                	</ol>
+                <h4>From 75</h4>
+                	<ol>
+                		<li>Exit Campbell from US-75</li>
+                        <li>Head west on Campbell</li>
+                		<li>Take a right on Custer</li>
+                		<li>Take a left on Lookout Dr.</li>
+                		<li>Country club will be on the left</li>
+                	</ol>
+            </span>
+        </div>
+        <iframe width="640" height="480" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps/ms?msa=0&amp;msid=217774709679966509286.0004e8334a2b6208e391f&amp;ie=UTF8&amp;t=m&amp;ll=32.97526,-96.731186&amp;spn=0.138247,0.219727&amp;z=12&amp;output=embed"></iframe>
+    </div>
+</div>
+
+<div class="container-fluid page-item-class" id="page6">
+    <div class="container">
+        <div class="page-header">
+            <h1>RSVP</h1>
+        </div>
+        <p>
+            Please RSVP!
+        </p>
+
+
+    </div>
+</div>
+
+<!-- Footer -->
+<footer class="footer">
+	<div class="footer_inner">
+		<div class="container">
+			<div class="row-fluid">
+				<div class="span10"><h5>Built by <a href="https://github.com/zlalanne/">Zack Lalanne</a> using a Mustache template from ThemeForest.</h5>
+				</div>
+				<div class="span2">
+					<a href="#page0" class="btn btn-link back_top_top scroll_to">BACK TO TOP<i class="icon-arrow-up"></i> </a>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+<!-- Footer END -->
+
+</body>
+</html>
+
