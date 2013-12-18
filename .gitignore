@@ -1,5 +1,6 @@
 *.log
 *.pot
 *.pyc
+db.sqlite3
 .idea
 local_settings.py
