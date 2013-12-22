@@ -332,7 +332,7 @@ You know your brand inside out. We know digital inside out. </p>
                 		<li>Take left on Lookout Dr.</li>
                 		<li>Country club will be on the left</li>
                 	</ol>
-                <h4>From 75</h4>
+                <h4>From US-75</h4>
                 	<ol>
                 		<li>Exit Campbell from US-75</li>
                         <li>Head west on Campbell</li>
@@ -350,9 +350,28 @@ You know your brand inside out. We know digital inside out. </p>
     <div class="container">
         <div class="page-header">
             <h1>RSVP</h1>
+            <h4>Please RSVP Below. We are excited to share this day with you!</h4>
         </div>
         <p>
-            Please RSVP!
+            <form action="/" method="post">
+                {% csrf_token %}
+                <p>
+                    <label for="id_attending">Will you be able to attend?</label>
+                    <input id="id_attending" name="attending" type="radio" value="True">Yes<br>
+                    <input id="id_attending" name="attending" type="radio" value="False">No<br>
+                </p>
+                <p>
+                    <label for="id_name">Guest Name:</label>
+                    <input style="height:30px;" id="id_name" maxlength="200" name="name" type="text">
+                    <label for="id_adults">Adults Attending:</label>
+                    <input style="height:30px;" id="id_adults" name="adults" type="number" value="1">
+                    <label for="id_children">Children Attending:</label>
+                    <input style="height:30px;" id="id_children" name="children" type="number" value="0">
+                    <label for="id_song">Any Song Requests?</label>
+                    <textarea name="song" cols="40" rows="5" style="height:60px; width:500px;" id="id_song"></textarea><br>
+                    <input type="submit" value="Submit" />
+                </p>
+            </form>
         </p>
 
 
