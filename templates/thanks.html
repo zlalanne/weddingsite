@@ -1,5 +1,106 @@
-<html>
-<body>
-    <p>Submitted!</p>
-</body>
+{% extends "base.html" %}
+{% load staticfiles %}
+
+{% block vars %}
+<script type="text/javascript">
+    var static_navbar = true;
+</script>
+{% endblock %}
+
+{% block styles %}
+<style type="text/css">
+
+      /* Sticky footer styles
+      -------------------------------------------------- */
+
+      html,
+      body {
+        height: 100%;
+        /* The html and body elements cannot have any padding or margin. */
+      }
+
+      /* Wrapper for page content to push down footer */
+      #wrap {
+        min-height: 100%;
+        height: auto !important;
+        height: 100%;
+        /* Negative indent footer by it's height */
+        margin: 0 auto -109px;
+      }
+
+      /* Set the fixed height of the footer here */
+      #push,
+      #footer {
+        height: 60px;
+      }
+      #footer {
+        background-color: #f5f5f5;
+      }
+
+      /* Lastly, apply responsive CSS fixes as necessary */
+      @media (max-width: 767px) {
+        #footer {
+          margin-left: -20px;
+          margin-right: -20px;
+          padding-left: 20px;
+          padding-right: 20px;
+        }
+      }
+
+    </style>
+
+{% endblock %}
+
+
+{% block navbar %}
+    <div id="wrap">
+    <!-- Navigation -->
+    <div class="navigation_main_wrapper">
+        <div class="navigation_main">
+            <div class="container-fluid">
+                <a id="collapse_button" class="btn btn-navbar pull-right" data-toggle="collapse" data-target=".nav-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </a>
+
+                <!-- Logo 3 on mobile fixed menu. Will be visible if window width is less than 768px. Max height 60px -->
+                <div class="mobile_menu_logo"><a href="/" class="scroll_to mobile_menu_logo_a">Nicole and Zack</a></div>
+
+                <div class="container navbar_container" id="collapse_element">
+                    <!-- Logo 2 on fixed menu. Max height 64px. Will be shown if window width > 768px -->
+                    <div class="logo2 pull-left">Nicole and Zack</div>
+
+                    <div class="navbar pull-right">
+                        <div class="navbar-inner">
+                            <ul class="nav">
+                                <li class="active"><a href="/">Home</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block content %}
+    <!-- Page 1 (about) -->
+    <div class="heading_pattern2"> </div>
+
+    <div class="container">
+        <h2>RSVP Successful!</h2>
+        <p>Thanks for the RSVP!<br>
+            <a href="/">Return to our wedding page.</a>
+        </p>
+
+    </div>
+    <div id="push"></div>
+</div>
+
+{% endblock %}
+
+{% block footer_top %}{% endblock %}
+
 </html>
+

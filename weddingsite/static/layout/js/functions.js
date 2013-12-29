@@ -215,13 +215,19 @@
 
 	// checks if menu should be fixed
 		function setup_menu(){
-			if(!$menu) $menu = $(".navigation_main");
-			if ( $(window).scrollTop() > 945 && !$menu.hasClass("navbar-fixed-top") ){
-				$menu.addClass("navbar-fixed-top");
-			} else if($(window).scrollTop() <= 945 && $menu.hasClass("navbar-fixed-top")) {
-				$menu.removeClass("navbar-fixed-top");
-			}
-		}
+
+            if(!$menu) $menu = $(".navigation_main");
+            if(typeof window.static_navbar === "undefined" || window.static_navbar === false) {
+
+                if ( $(window).scrollTop() > 945 && !$menu.hasClass("navbar-fixed-top") ){
+                    $menu.addClass("navbar-fixed-top");
+                } else if($(window).scrollTop() <= 945 && $menu.hasClass("navbar-fixed-top")) {
+                    $menu.removeClass("navbar-fixed-top");
+                }
+            } else {
+                $menu.addClass("navbar-fixed-top");
+            }
+        }
 		
 // =============== Menu setup END =============== //
 
