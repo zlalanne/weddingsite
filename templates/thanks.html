@@ -92,9 +92,15 @@
         {% if submission %}
             <h2>RSVP Successful!</h2>
             <p>Thanks for the RSVP!
-                <p>{{ name }} has RSVP'd for {{ adults }} adult(s) and {{ children }} children.<br>
-                If something changes please contact us. Thanks!</p>
-                <a href="/">Return to our wedding page.</a>
+                {% if attending %}
+                    <p>{{ name }} has RSVP'd for {{ adults }} adult(s) and {{ children }} children.<br>
+                    If something changes please contact us. Thanks!</p>
+                    <a href="/">Return to our wedding page.</a>
+                {% else %}
+                    <p>{{ name }} has declined with regret.<br>
+                    If something changes please contact us. Thanks!</p>
+                    <a href="/">Return to our wedding page.</a>
+                {% endif %}
             </p>
         {% else %}
             <h2>Error :-(</h2>
