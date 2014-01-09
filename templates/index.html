@@ -25,38 +25,10 @@
 <!-- Page 1 (about) -->
 <div class="container-fluid page-item-class" id="page1">
 	<div class="container">
-		<div class="page-header">
-			<h1>Need to put some stuff here</h1>
-		</div>
-		<p>We offer a wide range of services including web and app design, branding services and website development. We've worked with numerous clients to create professional websites and brands to a high standard. Check out my work above to see some of my finest. If you'd like to know more about what we do and think we could help improve your digital image don't hesitate to get in touch and find out how we can help you.</p>
-
-		<div class="row-fluid">
-			<div class="span3 tac">
-				<img src="{% static "images/about_icon_1.jpg" %}" alt="" />
-				<h5>СONCEPTUALIZATION</h5>
-				<p>Collaboration is key to success.
-You know your brand inside out. We know digital inside out. </p>
-			</div>
-			<div class="span3 tac">
-				<img src="{% static "images/about_icon_2.jpg" %}" alt="" />
-				<h5>DESIGN</h5>
-				<p>Collaboration is key to success.
-You know your brand inside out. We know digital inside out. </p>
-			</div>
-			<div class="span3 tac">
-				<img src="{% static "images/about_icon_3.jpg" %}" alt="" />
-				<h5>USER EXPERIENCE</h5>
-				<p>Collaboration is key to success.
-You know your brand inside out. We know digital inside out. </p>
-			</div>
-			<div class="span3 tac">
-				<img src="{% static "images/about_icon_4.jpg" %}" alt="" />
-				<h5>DEVELOPMENT</h5>
-				<p>Collaboration is key to success.
-You know your brand inside out. We know digital inside out. </p>
-			</div>
-			<div class="clearfix"></div>
-		</div>
+		<div class="page-header"><h1>Our Story</h1></div>
+        <p>
+            We are still working on this and will update it once we have more information! Thanks!
+        </p>
 	</div>
 </div>
 <!-- Page 1 (about) END -->
@@ -79,9 +51,13 @@ You know your brand inside out. We know digital inside out. </p>
                 <h1>Jacob Lalanne</h1>
                 <h2>Best Man</h2>
                 <img class="photo" src="{% static "images/zackandjake.png" %}"/>
-                    <p>Zack has known Jake since his birth. Jake is Zack's little brother and taught him everything he knows about kicking ass
-                in Super Smash Bros and delicious beer.  </p>
-                <p>Jake currently works as a chef in Denver, CO.</p>
+                <p>Jake is Zack's younger brother and best man. Zack got Jake his first job and his first car,
+                    but both ended badly. Although he lives in Denver, whenever they are together they
+                    make the most of the time they have, which usually includes playing video games and drinking beer. Zack
+                    admires Jake's work ethic and has accepted the fact that he never will be able to cook a steak or bake a
+                    cheesecake as well as he can.
+                    <br><br>Jake is currently a chef at a cajun restaurant in downtown Denver.
+                </p>
             </li>
             <li>
                 <span>
@@ -93,20 +69,37 @@ You know your brand inside out. We know digital inside out. </p>
             <li>
                 <span>
                 <h1>Tyler Hanna</h1>
-                <p>Tyler is one of Zack's oldest friends, going all the way back to the second grade. After years of
-                annual Stillwater trips and weekend film races they went off to college together and survived being roommates.</p>
+                <h2>Groomsmen</h2>
+                <img class="photo" src="{% static "images/zackandtyler.png" %}"/>
+                <p>Tyler is one of Zack's oldest friends, going all the way back to the second grade. Together they went
+                    on many annual Stillwater trips and got sleep deprived at weekend film races. After high school they
+                    went off to the University of Texas together and survived being roommates. <br><br>
+                    Tyler is now plotting revenge on Zack's triumphant victory as fantasy football champion.</p>
                 </span>
             </li>
             <li>
                 <span>
                 <h1>Ashleigh Johnson</h1>
+                <h2>Bridesmaid</h2>
                 <p>Here is some info about Ashleigh</p>
                 </span>
             </li>
             <li>
                 <span>
                 <h1>Gib Reynolds</h1>
-                <p>Gib is another old friend of Zack...</p>
+                <h2>Groomsmen</h2>
+                <img class="photo" src="{% static "images/nicoleandgib.png" %}"/>
+                <p>Gib is another old friend of Zack who he has known most of his life. Gib and Zack bonded over their
+                constant listening to Brand New and playing obscure high school sports. Conversations are now mostly
+                filled with talk of good beer and new tech along with the occasional BIG XII trash talk.<br><br>
+                Gib is now a professor at a college that has Bears on campus and will probably be a part of the next
+                big thing.</p>
+                </span>
+            </li>
+            <li>
+                <span>
+                <h1>Mackenzie Lund</h1>
+                <h2>Bridesmaid</h2>
                 </span>
             </li>
 		</ul>
@@ -180,7 +173,7 @@ You know your brand inside out. We know digital inside out. </p>
     <div class="container-fluid">
         <div class="container">
             <div class="page-header">
-                <h1>Getting Here</h1>
+                <h1>Ceremony and Reception</h1>
             </div>
         </div>
     </div>
@@ -235,9 +228,9 @@ You know your brand inside out. We know digital inside out. </p>
                     <label for="id_name">Guest Name:</label>
                     <input style="height:30px;" id="id_name" maxlength="200" name="name" type="text">
                     <label for="id_adults">Adults Attending:</label>
-                    <input style="height:30px;" id="id_adults" name="adults" type="number" value="1">
+                    <input style="height:30px;" id="id_adults" name="adults" type="number" value="1" min="0">
                     <label for="id_children">Children Attending:</label>
-                    <input style="height:30px;" id="id_children" name="children" type="number" value="0">
+                    <input style="height:30px;" id="id_children" name="children" type="number" value="0" min="0">
                     <label for="id_song">Any Song Requests?</label>
                     <textarea name="song" cols="40" rows="5" style="height:60px; width:500px;" id="id_song"></textarea><br>
                     <input type="submit" value="Submit" />
