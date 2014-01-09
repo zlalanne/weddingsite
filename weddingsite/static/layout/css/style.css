@@ -439,7 +439,7 @@ span {
 }
 .google_map iframe{
     border: medium none;
-    height: 620px;
+    height: 670px;
     margin: 0;
     width: 100%;
 }
@@ -912,3 +912,5 @@ span {
 .rsvp_field {
     height: 30px;
 }
+
+.flexslider .slides img {float: right; width: auto;}

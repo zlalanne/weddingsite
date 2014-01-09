@@ -251,7 +251,7 @@
 		 $('.flexslider').flexslider({
 			animation: "slide",                
 			slideshow: false, 
-			startAt: 1
+			startAt: 0
 		  });
 	}
 	
