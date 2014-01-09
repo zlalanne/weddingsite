@@ -46,9 +46,7 @@
           padding-right: 20px;
         }
       }
-
     </style>
-
 {% endblock %}
 
 
@@ -89,18 +87,9 @@
     <div class="heading_pattern2"> </div>
 
     <div class="container">
-        {% if submission %}
-            <h2>RSVP Successful!</h2>
-            <p>Thanks for the RSVP!
-                <p>{{ name }} has RSVP'd for {{ adults }} adult(s) and {{ children }} children.<br>
-                If something changes please contact us. Thanks!</p>
-                <a href="/">Return to our wedding page.</a>
-            </p>
-        {% else %}
-            <h2>Error :-(</h2>
-            <p>You have reached this page by error.</p>
-            <a href="/">Return to our wedding page.</a>
-        {% endif %}
+        <h2>Error :-(</h2>
+        <p>Something went wrong with your form submission and you have reached this page in error.</p>
+        <a href="/">Return to our wedding page.</a>
     </div>
     <div id="push"></div>
 </div>

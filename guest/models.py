@@ -20,3 +20,5 @@ class GuestForm(ModelForm):
     class Meta:
         model = Guest
         fields = ["name", "adults", "children", "attending", "song"]
+
+

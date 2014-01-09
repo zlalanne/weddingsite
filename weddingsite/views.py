@@ -4,8 +4,8 @@ from django.template import Context, loader
 
 import datetime
 
-
 from guest.models import GuestForm
+
 
 def home(request):
 
@@ -23,22 +23,29 @@ def home(request):
     else:
         time = "Been Married for {} Days".format(abs(days))
 
-
-    if request.method == "POST":
-        form = GuestForm(request.POST)
-        if form.is_valid():
-            form.save()
-            return HttpResponseRedirect("/thanks/")
-    else:
-        form = GuestForm()
+    form = GuestForm()
 
     return render(request, "index.html", {
         "form": form,
         "time": time
     })
 
+
 def thanks(request):
-    t = loader.get_template('thanks.html')
-    c = Context({
-        })
-    return HttpResponse(t.render(c))
+
+    if request.method == "POST":
+        form = GuestForm(request.POST)
+        if form.is_valid():
+            form.save()
+            return render(request, "thanks.html", { "submission": True,
+                                                    "attending": form.cleaned_data["attending"],
+                                                    "name": form.cleaned_data["name"],
+                                                    "adults": form.cleaned_data["adults"],
+                                                    "children": form.cleaned_data["children"]})
+        else:
+            HttpResponseRedirect("/sorry/")
+    else:
+        return render(request, "thanks.html", {"submission": False})
+
+def sorry(request):
+    return render(request, "sorry.html")
