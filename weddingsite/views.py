@@ -17,7 +17,7 @@ def home(request):
     if(days == 0):
         time = "Getting Married Today!"
     elif(days > 1):
-        time = "{} Days Until Getting Married!".format(days)
+        time = "{} Days Until We Get Married!".format(days)
     elif(days == 1):
         time = "Getting Married Tomorrow!"
     else:
