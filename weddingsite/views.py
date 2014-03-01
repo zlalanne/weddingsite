@@ -12,7 +12,7 @@ def home(request):
     current = datetime.datetime.now()
     wedding = datetime.datetime(2014, 7, 12)
     days = wedding - current
-    days = days.days
+    days = days.days - 1
 
     if(days == 0):
         time = "Getting Married Today!"
