@@ -351,134 +351,61 @@ span {
     line-height:40px;
 }
 .event_block{
-    background-color:#3bd072;
+    background-color:#99d2dd;
     color:#fff;
     padding: 15px 10px 60px 10px;
 }
-.event_block2{  background-color:#08ac67;}
-.event_block3{  background-color:#1d7c80;}
-.event_block4{  background-color:#2b4664;}
+.event_block2{  background-color:#70cbdd;}
+.event_block3{  background-color:#5facbb;}
+.event_block4{  background-color:#76d6e8;}
 
-.isotop_item{overflow:hidden;position:relative;}
-.isotop_item.horizontal{min-height:630px;}
-
-.isotop_item img{display:block;max-width: auto;}
-.isotop_item .isotope-item{margin:5px;}
-.isotop_item.horizontal .isotope-item{cursor:e-resize}
-.isotop_item.vertical{ margin-left : -20px; margin-right:-20px;}
-
-.isotop_item_inner{
-    border:none;
-}
-.horizontal .isotop_item_inner{
-    height: 630px !important;
+.event_block .the_btn{
+    color:#525252;
+    background-color: #99d2dd;
+    border: 1px solid #ffffff;
 }
 
-.google_map{
-    position:relative;
-    margin-bottom:50px;
-}
-.google_map .form_container{
-    width: 350px;
-    background-color:#dd4a38;
-    padding:40px;
-    color:#fff;
-    position:absolute;
-    min-height:540px;
-}
-.google_map .form_container legend{
-    border:none;
-    color:#fff;
-    margin-bottom: 30px;
-    padding-top: 20px;
-    font-size:40px;
-    font-family: 'Raleway',Arial,sans-serif;;
-}
-.google_map .form_container span{
-    margin-bottom:5px;
-    display: block;
-    font-family: 'Montserrat',Arial,sans-serif;
-}
-.google_map .form_container label{
-    margin-bottom:20px;
-}
-.google_map .form_container input,
-.google_map .form_container textarea{
-    width:276px;
-    border: 1px solid #b82b1a;
-    -webkit-box-shadow: inset 0 0 1px rgba(184, 43, 26, 0.075);
-         -moz-box-shadow: inset 0 0 1px rgba(184, 43, 26, 0.075);
-              box-shadow: inset 0 0 1px rgba(184, 43, 26, 0.075);
-      -webkit-transition: border linear 0.2s, box-shadow linear 0.2s;
-         -moz-transition: border linear 0.2s, box-shadow linear 0.2s;
-           -o-transition: border linear 0.2s, box-shadow linear 0.2s;
-              transition: border linear 0.2s, box-shadow linear 0.2s;
-}
-.google_map .form_container input:focus,
-.google_map .form_container textarea:focus{
-    -webkit-box-shadow: inset 0 1px 1px rgba(184, 43, 26, 0.075), 0 0 8px rgba(255, 255, 255, 0.6);
-         -moz-box-shadow: inset 0 1px 1px rgba(184, 43, 26, 0.075), 0 0 8px rgba(255, 255, 255, 0.6);
-              box-shadow: inset 0 1px 1px rgba(184, 43, 26, 0.075), 0 0 8px rgba(255, 255, 255, 0.6);
-}
-.google_map .form_container .form_close_elements{
-    height: 42px;
-    margin-top:-20px;
-    position: absolute;
-    right: -42px;
-    top: 50%;
-    width: 42px;
-    cursor:pointer;
-    background-color: #DD4A38;
+.event_block .the_btn:hover{
+    color:#525252;
+    background-color: #f7d501;
+    text-decoration:none;
 }
 
-.google_map .form_container .form_close_elements i{
-    margin: 11px 0 0 13px;
-}
-.google_map .form_container.is_closed .form_close_elements i{
-    background-position: -457px -72px;
-}
-.google_map iframe{
-    border: medium none;
-    height: 670px;
-    margin: 0;
-    width: 100%;
+
+.event_block2 .the_btn{
+    color:#525252;
+    background-color: #70cbdd;
+    border: 1px solid #ffffff;
 }
 
-.follow_element a{
-    background-repeat: no-repeat;
-    display: block;
-    height: 145px;
-    width: 145px;
-    background-image:url(../img/follow_us_icons.png);
-}
-.follow_element a:hover{
-    -webkit-transition: background linear 0.4s;
-         -moz-transition: background linear 0.4s;
-           -o-transition: background linear 0.4s;
-              transition: background linear 0.4s;
+.event_block2 .the_btn:hover{
+    color:#525252;
+    background-color: #f7d501;
+    text-decoration:none;
 }
 
-.follow_us_block{
-    margin-top: 50px;
-    overflow: hidden;
-}
-.follow_element{
-    float: left;
-    margin-left: 48px;
+.event_block3 .the_btn{
+    color:#525252;
+    background-color: #5facbb;
+    border: 1px solid #ffffff;
 }
 
-    /* ie8 hack */
-    @media \0screen {
-        .follow_element{
-            margin-left: 10px;
-        }
-        .follow_element:first-child {
-            margin-left: 0 !important;
-        }
-    }
+.event_block3 .the_btn:hover{
+    color:#525252;
+    background-color: #f7d501;
+    text-decoration:none;
+}
 
-.follow_element:first-child{
-    margin-left:28px
+.event_block4 .the_btn{
+    color:#525252;
+    background-color: #76d6e8;
+    border: 1px solid #ffffff;
+}
+
+.event_block4 .the_btn:hover{
+    color:#525252;
+    background-color: #f7d501;
+    text-decoration:none;
 }
 
 .the_btn{
@@ -549,6 +476,59 @@ span {
     background-color: transparent;
     text-decoration:none;
     border-color:#fff;
+}
+
+
+.isotop_item{overflow:hidden;position:relative;}
+.isotop_item.horizontal{min-height:630px;}
+
+.isotop_item img{display:block;max-width: auto;}
+.isotop_item .isotope-item{margin:5px;}
+.isotop_item.horizontal .isotope-item{cursor:e-resize}
+.isotop_item.vertical{ margin-left : -20px; margin-right:-20px;}
+
+.isotop_item_inner{
+    border:none;
+}
+.horizontal .isotop_item_inner{
+    height: 630px !important;
+}
+
+.follow_element a{
+    background-repeat: no-repeat;
+    display: block;
+    height: 145px;
+    width: 145px;
+    background-image:url(../img/follow_us_icons.png);
+}
+.follow_element a:hover{
+    -webkit-transition: background linear 0.4s;
+         -moz-transition: background linear 0.4s;
+           -o-transition: background linear 0.4s;
+              transition: background linear 0.4s;
+}
+
+.follow_us_block{
+    margin-top: 50px;
+    overflow: hidden;
+}
+.follow_element{
+    float: left;
+    margin-left: 48px;
+}
+
+    /* ie8 hack */
+    @media \0screen {
+        .follow_element{
+            margin-left: 10px;
+        }
+        .follow_element:first-child {
+            margin-left: 0 !important;
+        }
+    }
+
+.follow_element:first-child{
+    margin-left:28px
 }
 
 .footer{
@@ -664,6 +644,7 @@ span {
     color:#525252;
 }
 
+
 #page2 h1{
     color:#525252;
 }
@@ -682,21 +663,17 @@ span {
 }
 
 #page3{
-    background-image:url("../../images/events_bg.jpg");
-    background-color:#31366b;
-    color:#ffffff;
+    background-color:#f7d501;
+    color:#525252;
 }
 #page3 h1, #page3 h2, #page3 h3, #page3 h4, #page3 h5, #page3 h6, #page3 h1 small {
-    color:#ffffff;
+    color:#525252;
 }
 
-#page3 .row-fluid{
+#page3 .row{
     margin-bottom:20px;
 }
 
-#page3 a{
-    color:#3bd072;
-}
 #page4{
     background-color:#ffffff;
 }
