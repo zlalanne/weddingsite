@@ -7,7 +7,7 @@ body{
 }
 a, a:hover, a:focus{
     outline:none;
-    color:#df4931;
+    color:#525252;
 }
 p {
     margin: 0 0 50px;
@@ -432,6 +432,9 @@ span {
     border-radius: 6px;
     font-size: 17.5px;
     padding: 11px 19px;
+}
+.the_btn.btn-md{
+    font-size: 14.5px;
 }
 .the_btn.btn-small {
     border-radius: 3px;
