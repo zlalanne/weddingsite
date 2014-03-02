@@ -250,7 +250,7 @@
 	function setupFlexSlider(){
 		 $('.flexslider').flexslider({
 			animation: "slide",                
-			slideshow: false, 
+			slideshow: true,
 			startAt: 0
 		  });
 	}

@@ -305,10 +305,7 @@ span {
     box-shadow:none;
     min-height:600px;
 }
-.flexslider{max-width:800px;margin:0 auto;}
-.flex-viewport{overflow:visible !important}
-.flex-direction-nav{}
-.has_slider{overflow:hidden;}
+
 
 .flexslider .slides > li{position:relative;}
 .flex-caption{
@@ -410,11 +407,11 @@ span {
 
 .the_btn{
     margin-bottom:10px;
-    background-color: #DF4931;
-    border: 1px solid #DF4931;
+    background-color: #99d2dd;
+    border: 1px solid #FFFFFF;
     border-radius: 4px 4px 4px 4px;
     text-align:center;
-    color: #FFFFFF;
+    color: #525252;
     font-size: 14px;
     line-height: 20px;
     padding: 4px 12px;
@@ -427,8 +424,8 @@ span {
               transition: background-color linear 0.4s, color linear 0.4s;
 }
 .the_btn:hover{
-    color:#DF4931;
-    background-color: #FFFFFF;
+    color:#525252;
+    background-color: #f7d501;
     text-decoration:none;
 }
 .the_btn.btn-large{
