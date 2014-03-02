@@ -23,7 +23,7 @@
 
 {% block content %}
 <!-- Page 1 (about) -->
-<div class="container-fluid page-item-class" id="page1">
+<div class="container page-item-class" id="page1">
 	<div class="container">
         <div class="page-header">
             <h1>Our Story</h1>
@@ -162,6 +162,17 @@
                     Texas to take the bar, so if you're look for a very capable lawyer, look no further!</p>
                 </span>
             </li>
+            <li>
+                <span>
+                <h1>Corey Streetman</h1>
+                <h2>Groomsmen</h2>
+                <img class="photo" src="{% static "images/coreyzack.png" %}"/>
+                <p>Corey is Zack's future brother in law. They enjoy watching and discussing Texas Lognhorn football
+                and making fun of their Sooner relatives. 
+
+                <br><br>Corey lives in Gunter with Jackie and Brennen and is a firefighter for the Sherman fire department.</p>
+                </span>
+            </li>
 		</ul>
 	</div>
 
@@ -226,9 +237,7 @@
 		</div>
 	</div>
 </div>
-<!-- Page 3 (Events) END -->
 
-<!-- Page 1 (about) -->
 <div class="container-fluid page-item-class" id="page4">
     <div class="container">
         <div class="page-header">
@@ -239,47 +248,54 @@
         </p>
     </div>
 </div>
-<!-- Page 1 (about) END -->
 
-<!-- Page 5 (Contacts) -->
 <div class="page-item-class" id="page5">
-    <div class="container-fluid">
+    <div class="container">
         <div class="container">
             <div class="page-header">
-                <h1>Ceremony and Reception</h1>
+                <h1>Information</h1>
             </div>
         </div>
-    </div>
-    <div class="google_map">
-        <div class="form_container">
-            <span>
-                <h3>Epiphany Episcopal Church</h3>
-                <h5>421 Custer Rd.<br>Richardson, TX 75080</h5>
-                	<ol>
-                		<li>Exit Arapaho from US-75</li>
-                        <li>Head west on Arapaho</li>
-                		<li>Take a left on Custer</li>
-                		<li>Church is on the right side before Belt Line</li>
-                	</ol>
-                <h3>Canyon Creek Country Club</h3>
-                <h5>625 West Lookout Dr.<br>Richardson, TX 75080</h5>
-                <h4>From the Church</h4>
-                	<ol>
-                		<li>Head North on Custer</li>
-                		<li>Take left on Lookout Dr.</li>
-                		<li>Country club will be on the left</li>
-                	</ol>
-                <h4>From US-75</h4>
-                	<ol>
-                		<li>Exit Campbell from US-75</li>
-                        <li>Head west on Campbell</li>
-                		<li>Take a right on Custer</li>
-                		<li>Take a left on Lookout Dr.</li>
-                		<li>Country club will be on the left</li>
-                	</ol>
-            </span>
+        <div class="container">
+            <div class="info-contain">
+                <div class="row">
+                    <div class="span4 info-box">
+                        <i class="fa fa-calendar fa-2x"></i>
+                        <span class="date">July 14th, 2014</span>
+                        <span class="time">Ceremony begins at 6:30pm</span>
+                        <span class="time">Dinner and dancing to follow</span>
+                        <a class="the_btn" href="maps.google.com">Add to Calendar</a>
+                    </div>
+                    <div class="span4 info-box">
+                        <i class="fa fa-map-marker fa-2x"></i>
+                        <span class="location-name">Episcopal Church of the Epiphany</span>
+                        <span class="location-address">421 Custer Rd.</span>
+                        <span class="location-address">Richardson, TX 75080</span>
+                        <a class="the_btn" href="http://maps.google.com/?q=421 N. Custer Rd. Richardson, TX 75080">Directions</a>
+                    </div>
+                    <div class="span4 info-box">
+                        <i class="fa fa-map-marker fa-2x"></i>
+                        <span class="location-name">Canyon Creek Country Club</span>
+                        <span class="location-address">625 W Lookout Dr.</span>
+                        <span class="location-address">Richardson, Texas 75080</span>
+                        <a class="the_btn" href="http://maps.google.com/?q=625 W Lookout Dr, Richardson, Texas 75080">Directions</a>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="span8 offset2 info-box">
+                    <br>
+                    <p>
+                        For those who would like to give us a gift we are registered at the following places. We appreciate
+                        you celebrating this day with us and we are very grateful for our family and friends.<br><br>
+                        <a class="the_btn" href="http://www.bedbathandbeyond.com/store/giftregistry/view_registry_guest.jsp?pwsToken=&eventType=Wedding&registryId=10788925&pwsurl=">Bed Bath & Beyond</a><br>
+                        <a class="the_btn" href="http://www1.macys.com/registry/wedding/guest/?registryId=6101439">Macy's</a>
+                    </p>
+                </div>
+            </div>
+
         </div>
-        <iframe width="640" height="480" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps/ms?msa=0&amp;msid=217774709679966509286.0004e8334a2b6208e391f&amp;ie=UTF8&amp;t=m&amp;ll=32.97526,-96.731186&amp;spn=0.138247,0.219727&amp;z=12&amp;output=embed"></iframe>
     </div>
 </div>
 

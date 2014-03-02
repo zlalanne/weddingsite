@@ -140,14 +140,14 @@ span {
     box-shadow:none;
     -webkit-box-shadow: none;
      -moz-box-shadow: none;
-    color:#df4931;
+    color:#99d2dd;
     text-decoration:underline;
 }
 .dropdown-menu li > a:hover,
 .dropdown-menu li > a:focus,
 .dropdown-submenu:hover > a,
 .dropdown-menu .active > a, .dropdown-menu .active > a:hover{
-    background:#DF4931 !important;
+    background:#99d2dd !important;
     background-image: none;
     filter: none;
 }
@@ -458,24 +458,6 @@ span {
               transition: background linear 0.4s;
 }
 
-.forrst{background-position: -8px -7px;}
-.forrst:hover{background-position: -8px -187px;}
-
-.digg{background-position: -208px -7px;}
-.digg:hover{background-position: -208px  -187px;}
-
-.twitter{background-position: -408px -7px;}
-.twitter:hover{background-position: -408px  -187px;}
-
-.flikr{background-position: -607px -7px;}
-.flikr:hover{background-position: -607px  -187px;}
-
-.facebook{background-position: -808px -7px;}
-.facebook:hover{background-position: -808px -187px;}
-
-.linkedin{background-position: -1008px -7px;}
-.linkedin:hover{background-position: -1008px  -187px;}
-
 .follow_us_block{
     margin-top: 50px;
     overflow: hidden;
@@ -674,11 +656,16 @@ span {
 
 #page2, #page2 h1{
     background-color:#99d2dd;
-    color:#ffffff;
+    color:#525252;
+}
+
+#page5, #page5 h1{
+    background-color:#99d2dd;
+    color:#525252;
 }
 
 #page2 h1{
-    color:#ffffff;
+    color:#525252;
 }
 
 .photo{
@@ -912,6 +899,26 @@ span {
 
 .rsvp_field {
     height: 30px;
+}
+
+.info-box {
+    text-align: center;
+}
+
+.location-name {
+    color: black;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+
+.date {
+    color: black;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+
+.info-contain {
+    font-family: Helvetica;
 }
 
 .flexslider .slides img {float: right; width: auto;}
