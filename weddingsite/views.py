@@ -48,4 +48,4 @@ def thanks(request):
         return render(request, "thanks.html", {"submission": False})
 
 def sorry(request):
-    return render(request, "sorry.html")
+    return render(request, "404.html")
