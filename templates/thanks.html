@@ -93,10 +93,12 @@
             <h2>RSVP Successful!</h2>
             <p>Thanks for the RSVP!
                 {% if attending %}
+                    We are excited to celebrate with you!
                     <p>{{ name }} has RSVP'd for {{ adults }} adult(s) and {{ children }} children.<br>
                     If something changes please contact us. Thanks!</p>
                     <a href="/">Return to our wedding page.</a>
                 {% else %}
+                    We are sorry you can't make it. We will miss you!
                     <p>{{ name }} has declined with regret.<br>
                     If something changes please contact us. Thanks!</p>
                     <a href="/">Return to our wedding page.</a>
